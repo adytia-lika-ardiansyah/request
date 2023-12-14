@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Request Form</title>
+    <title>Request Form</title>
     <style>
         :root {
             --main-color: #6C63FF;
@@ -109,7 +109,7 @@
     function submitForm() {
     const form = document.getElementById('requestForm');
 
-    fetch('https://docs.google.com/forms/d/e/1FAIpQLSeGA5XooUMn4n5HNH6p1lyOAHPj88L8_0GMOqBHgwe_w8TzpA/formResponse', {
+    fetch('https://docs.google.com/forms/d/e/1amptcPpwKU1fd1XgwvA607HdNfx9nx7qcMd-ppi_kCM/formResponse', {
         method: 'POST',
         body: new FormData(form),
     })
@@ -118,7 +118,7 @@
         console.log('Form submitted successfully:', response);
 
         // Redirect to the thanks.html page
-        window.location.href = 'https://a-request-psproms.vercel.app/thanks.html';
+        
     })
     .catch(error => {
         // Handle errors
