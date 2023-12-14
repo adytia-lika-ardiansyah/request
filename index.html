@@ -109,16 +109,13 @@
     function submitForm() {
     const form = document.getElementById('requestForm');
 
-    fetch('https://docs.google.com/forms/d/e/1amptcPpwKU1fd1XgwvA607HdNfx9nx7qcMd-ppi_kCM/formResponse', {
+    fetch('https://docs.google.com/forms/d/e/1FAIpQLSeGA5XooUMn4n5HNH6p1lyOAHPj88L8_0GMOqBHgwe_w8TzpA/formResponse', {
         method: 'POST',
         body: new FormData(form),
     })
     .then(response => {
         // Handle the response as needed
         console.log('Form submitted successfully:', response);
-
-        // Redirect to the thanks.html page
-        
     })
     .catch(error => {
         // Handle errors
