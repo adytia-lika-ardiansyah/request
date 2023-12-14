@@ -97,8 +97,8 @@
 <div class="container">
 
     <form id="requestForm">
-        <input type="text" id="name" name="entry.1440150730" placeholder="Name">
-        <textarea id="request" name="entry.820449086" rows="4" required placeholder="Request"></textarea>
+        <input type="text" id="name" name="entry.381513155" placeholder="Name">
+        <textarea id="request" name="entry.1097222471" rows="4" required placeholder="Request"></textarea>
 
         <button class="btn btn-animation" onclick="submitForm()">Submit Request</button>
     </form>
@@ -109,7 +109,7 @@
     function submitForm() {
     const form = document.getElementById('requestForm');
 
-    fetch('https://docs.google.com/forms/d/e/1FAIpQLSf8KDtm45tafuNn7MqLS7AYWbVWYsNekkhcu3HpYEr-dxfkMw/formResponse', {
+    fetch('https://docs.google.com/forms/d/e/1FAIpQLSeGA5XooUMn4n5HNH6p1lyOAHPj88L8_0GMOqBHgwe_w8TzpA/formResponse', {
         method: 'POST',
         body: new FormData(form),
     })
